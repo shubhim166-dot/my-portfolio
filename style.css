@@ -1,0 +1,153 @@
+/* Base Layout Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fafafa;
+    color: #222;
+}
+
+/* Navbar Positioning */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #111;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Main Welcome Screen */
+.hero-section {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://unsplash.com') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #00bcd4;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Buttons */
+.cta-btn, .submit-btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover, .submit-btn:hover {
+    background-color: #008c9e;
+}
+
+/* Global Content Blocks */
+.content-section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-theme p {
+    color: #ccc;
+}
+
+/* Skills Layout */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skill-tag {
+    background-color: #333;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: 1px solid #444;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 30px auto 0;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
